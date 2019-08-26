@@ -7,3 +7,8 @@
 
 # .tfvars files
 *.tfvars
+
+# custom
+backend.tf
+.idea/
+.vscode/
