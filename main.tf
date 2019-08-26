@@ -1,5 +1,5 @@
 module "DEV" {
-  source            = "git::https://github.com/butzist/DevOpsDemo-k8s?ref=v0.1.0"
+  source            = "git::https://github.com/butzist/DevOpsDemo-k8s?ref=v0.1.1"
   prefix            = var.prefix
   letsencrypt_email = var.letsencrypt_email
   environment       = "DEV"
@@ -9,7 +9,7 @@ module "DEV" {
 }
 
 module "PROD" {
-  source            = "git::https://github.com/butzist/DevOpsDemo-k8s?ref=v0.1.0"
+  source            = "git::https://github.com/butzist/DevOpsDemo-k8s?ref=v0.1.1"
   prefix            = var.prefix
   letsencrypt_email = var.letsencrypt_email
   environment       = "PROD"
