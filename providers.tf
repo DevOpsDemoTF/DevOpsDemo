@@ -20,6 +20,7 @@ provider "template" {
 
 provider "kubernetes" {
   version = "~>1.8"
+  alias   = "kubernetes_dev"
   host    = module.DEV.login.host
 
   client_certificate     = base64decode(module.DEV.login.client_certificate)
@@ -29,6 +30,7 @@ provider "kubernetes" {
 
 provider "helm" {
   version         = "~>0.10"
+  alias           = "helm_dev"
   namespace       = module.DEV.helm.tiller_namespace
   service_account = module.DEV.helm.tiller_name
 

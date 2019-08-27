@@ -25,4 +25,9 @@ module "Spinnaker" {
   prefix   = var.prefix
   location = var.location
   domain   = module.DEV.fqdn
+
+  providers = {
+    kubernetes = kubernetes.kubernetes_dev
+    helm       = helm.helm_dev
+  }
 }
