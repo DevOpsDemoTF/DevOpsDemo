@@ -31,3 +31,10 @@ module "Spinnaker" {
     helm       = helm.helm_dev
   }
 }
+
+output "dashboards" {
+  value = {
+    "DEV": module.DEV.dashboard_url
+    "PROD": module.PROD.dashboard_url
+  }
+}
