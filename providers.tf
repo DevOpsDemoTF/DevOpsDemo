@@ -18,6 +18,10 @@ provider "template" {
   version = "~>2.1"
 }
 
+provider "null" {
+  version = "~>2.1"
+}
+
 provider "kubernetes" {
   version = "~>1.8"
   alias   = "kubernetes_dev"
