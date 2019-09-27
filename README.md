@@ -44,6 +44,7 @@ Process for new service:
 * Log analytics via Azure Log Anaytics
 * Metrics exposure via service templates
 * Metrics analytics and alerts via Azure Log Analytics
+* Service health-check/readiness probe via service templates and Kubernetes
 * External traffic routing via Nginx ingress controller
 * SSL termination via Nginx ingress controller, certificate manager and Let's encrypt
 * CORS handling via Nginx ingress controller
@@ -77,6 +78,17 @@ Process for new service:
 * Pre-configured Spinnaker pipeline templates
 
 #### Service templates ####
+* Build in multi-stage Docker container
+** Minimum size
+** Maximum security by not including unnecessary binaries in image
+** Run as non-root user
+* Configuration via environment variables
+* State passed to API handlers
+* Structure logging in JSON
+* Health-check endpoint
+* Prometheus metrics
+* Unit tests with JUnit-compatible output
+* API/integration tests with docker-compose
 
 ### Modules ###
 * [Azure Kubernetes cluster](https://github.com/DevOpsDemoTF/DevOpsDemo-k8s/)
