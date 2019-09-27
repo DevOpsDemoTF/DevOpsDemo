@@ -26,8 +26,8 @@ DevOpsDemo featuring a production-grade setup of Kubernetes and Spinnaker on Azu
 * DEV, TEST, PROD, etc (configurable)
 * Stages are deployed and configured via Terraform
 * Each stage has its own Kubernetes cluster and Docker container registry
-** Ensures changes in infrastructure can be tested safely before applying to production
-** Promotion of Docker images between stages
+  * Ensures changes in infrastructure can be tested safely before applying to production
+  * Promotion of Docker images between stages
 
 ### Other features ###
 * Continuous deployment of infrastructure via Terraform
@@ -63,10 +63,10 @@ DevOpsDemo featuring a production-grade setup of Kubernetes and Spinnaker on Azu
 * Handles cross-cutting concerns of services like discovery, scaling, resources, networking/routing, logging
 * Enabled RBAC (role-based access control) for intra-cluster security
 * Nginx ingress controllers
-** External traffic routing
-** SSL termination with Let's encrypt certificates
-** CORS handling
-** Authentication possible with OAuth2 Proxy
+  * External traffic routing
+  * SSL termination with Let's encrypt certificates
+  * CORS handling
+  * Authentication possible with OAuth2 Proxy
 * Metrics scraping with Azure Metrics Collector
 
 #### Spinnaker ####
@@ -79,9 +79,9 @@ DevOpsDemo featuring a production-grade setup of Kubernetes and Spinnaker on Azu
 
 #### Service templates ####
 * Build in multi-stage Docker container
-** Minimum size
-** Maximum security by not including unnecessary binaries in image
-** Run as non-root user
+  * Minimum size
+  * Maximum security by not including unnecessary binaries in image
+  * Run as non-root user
 * Configuration via environment variables
 * State passed to API handlers
 * Structure logging in JSON
