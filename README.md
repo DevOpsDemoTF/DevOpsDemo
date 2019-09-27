@@ -3,7 +3,7 @@ DevOpsDemo featuring a production-grade setup of Kubernetes and Spinnaker on Azu
 
 ## Architecture ##
 
-Overall deployment process:
+#### Overall deployment process: ####
 1. Git tag
 2. Trigger Azure DevOps pipeline
 3. Build Docker image
@@ -15,7 +15,7 @@ Overall deployment process:
 9. Automated deployment to further stages (optionally after manual validation)
 10. Monitoring, log analysis, alerting via Azure Log Analytics
 
-Process for new service:
+#### Process for new service: ####
 1. Clone service template into new Git repository
 2. Create new Azure DevOps pipeline for repository (TODO: automate)
 3. Create additional infrastructure for the service (database, blob storage, etc)
